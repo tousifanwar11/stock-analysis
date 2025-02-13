@@ -610,7 +610,7 @@ class AssetGroupVisualizer(Visualizer):
             - kwargs: Keyword arguments to pass down to `sns.pairplot()`
 
         Returns:
-            A seaborn pairplot
+            A seaborn pair plot
         """
         return sns.pairplot(
             self.data.pivot_table(
@@ -625,7 +625,7 @@ class AssetGroupVisualizer(Visualizer):
         Generate a seaborn heatmap for correlations between assets.
 
         Parameters:
-            - pct_change: Whether or not to show the correlations of the
+            - pct_change: Whether to show the correlations of the
                           daily percent change in price or just use
                           the closing price.
             - kwargs: Keyword arguments to pass down to `sns.heatmap()`
